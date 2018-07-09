@@ -39,7 +39,6 @@
                 <version>2.17</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/addBrowser.xml</suiteXmlFile>
                         <suiteXmlFile>src/test/resources/mailClick.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
