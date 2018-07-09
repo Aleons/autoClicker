@@ -14,7 +14,7 @@ public class StartAutoclicker {
     }
 
     @Test
-    void addBrowser(){
+    void addBrowser() throws InterruptedException {
         AddBrowserPage addBrowserPage = new AddBrowserPage();
         addBrowserPage.addBrowser();
     }
