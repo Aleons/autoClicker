@@ -23,6 +23,7 @@ public class TaskMailPage {
             $(By.xpath("//*[@class=\"tbl_stat\"]//tr[4]//a")).click();
             Thread.sleep(65000);
             open("http://www.wmmail.ru/index.php?cf=mail-viewpmail");
+            Thread.sleep(5000);
         }
     }
 
