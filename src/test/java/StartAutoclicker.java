@@ -8,6 +8,7 @@ public class StartAutoclicker {
     void mailAutoclick() throws InterruptedException {
         LogInPage logInPage = new LogInPage();
         logInPage.openSite().sendLogin(System.getProperty("LOGIN")).sendPassword(System.getProperty("PASS")).clickEnterBtn()
+                .addBrowser()
                 .useLeftMenu()
                 .clickTaskMail()
                 .clickMail();

@@ -5,11 +5,6 @@
         <classes>
             <class name="StartAutoclicker">
                 <methods>
-                    <include name="addBrowser"/>
-                </methods>
-            </class>
-            <class name="StartAutoclicker">
-                <methods>
                     <include name="mailAutoclick"/>
                 </methods>
             </class>

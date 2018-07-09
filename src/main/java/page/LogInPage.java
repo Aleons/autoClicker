@@ -11,6 +11,7 @@ public class LogInPage {
     SelenideElement login = $(By.xpath("//*[@name=\"ulogin\"]"));
     SelenideElement password = $(By.xpath("//*[@name=\"pass\"]"));
     SelenideElement enterBtn = $(By.xpath("//*[@name=\"//*[@id=\"login\"]/table/tbody/tr[1]/td[3]/input\"]"));
+    SelenideElement key = $(By.xpath("//*[@name=\"pass1\"]"));
 
     public LogInPage openSite(){
         open("http://www.wmmail.ru");
@@ -27,12 +28,15 @@ public class LogInPage {
         return this;
     }
 
-    public MainPage clickEnterBtn(){
+    public LogInPage clickEnterBtn(){
         password.pressEnter();
-        return page(MainPage.class);
+        return this;
     }
-    public void addBrowser(){
-
+    public MainPage addBrowser() throws InterruptedException {
+        Thread.sleep(3000);
+        key.sendKeys(System.getProperty("KEY"));
+        key.pressEnter();
+        return page(MainPage.class);
     }
 
 }
