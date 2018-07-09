@@ -12,7 +12,7 @@ public class AddBrowserPage {
 
     public void addBrowser(){
         logInPage.openSite().sendLogin(System.getProperty("LOGIN")).sendPassword(System.getProperty("PASS")).clickEnterBtn();
-        key.sendKeys(System.getProperty("PASS"));
+        key.sendKeys(System.getProperty("KEY"));
         key.pressEnter();
     }
 }

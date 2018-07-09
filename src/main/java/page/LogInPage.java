@@ -31,5 +31,8 @@ public class LogInPage {
         password.pressEnter();
         return page(MainPage.class);
     }
+    public void addBrowser(){
+
+    }
 
 }
